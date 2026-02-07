@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Special Link 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align:center; margin-top:20vh; background:#fff0f5;">
+
+  <h1>💌 Something for You</h1>
+  <p>Share this live link</p>
+
+  <input id="link" value="PASTE_LIVE_LINK_HERE" readonly>
+  <br><br>
+
+  <button onclick="copyLink()">Copy Link</button>
+  <br><br>
+
+  <a href="proposal.html">
+    <button style="background:hotpink;color:white;">Open Surprise</button>
+  </a>
+
+<script>
+function copyLink() {
+  navigator.clipboard.writeText(
+    document.getElementById("link").value
+  );
+  alert("Link copied ❤️");
+}
+</script>
+
+</body>
+</html>
